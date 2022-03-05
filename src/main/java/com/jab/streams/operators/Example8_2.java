@@ -12,7 +12,7 @@ public class Example8_2 {
 
         Stream.of(asList(1, 2), asList(3, 4))
                 .flatMap(List::stream)
-                .map(integer -> integer + 1)
+                
                 .collect(Collectors.toList())
                 .stream()
                 .forEach(System.out::println);
